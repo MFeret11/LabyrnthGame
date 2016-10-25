@@ -10,7 +10,8 @@ public class EnterWinHole : MonoBehaviour {
 
 		this.GetComponentInParent<MeshCollider> ().convex = true;
 		this.GetComponentInParent<MeshCollider> ().isTrigger = true;
-
+		//yield return new WaitForSeconds(1);
+		//this.GetComponentInParent<MeshCollider> ().isTrigger = false;
 
 	}
 

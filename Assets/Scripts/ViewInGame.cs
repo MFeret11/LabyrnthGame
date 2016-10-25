@@ -5,14 +5,14 @@ using System.Collections;
 public class ViewInGame : MonoBehaviour {
 
 	public Text scoreLabel;
-	public Text coinLabel;
+	public Text levelCountLabel;
 	public Text highscoreLabel;
 
 
 	void Update() {
 		if (GameManager.instance.currentGameState == GameState.inGame) {
-			scoreLabel.text = PlayerController.instance.GetDistance().ToString("f0");
-			coinLabel.text = GameManager.instance.highScore.ToString();
+			scoreLabel.text = Time.time.ToString("f0");
+			levelCountLabel.text = GameManager.instance.highScore.ToString();
 			highscoreLabel.text = PlayerPrefs.GetFloat("highscore", 0).ToString("f0");
 		}
 	}

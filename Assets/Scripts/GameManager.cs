@@ -34,10 +34,12 @@ public class GameManager : MonoBehaviour {
 		SetGameState(GameState.inGame);
 		Time.timeScale = 1.0f;
 	}
+		
 
 	//called when player dies
 	public void GameOver() {
 		SetGameState(GameState.gameOver);
+		//highScore = 0;
 	}
 		
 	//called when player decide to go back to the menu
@@ -74,6 +76,12 @@ public class GameManager : MonoBehaviour {
 	}
 	public void HighScore() {
 		highScore ++;
+		if (highScore >= 4) {
+			Debug.Log ("GameOver");
+			GameOver();
+			Time.timeScale = 0.2f;
+		}
+			
 		Debug.Log (highScore);
 	}
 
