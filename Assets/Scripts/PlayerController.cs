@@ -15,11 +15,14 @@ public class PlayerController : MonoBehaviour
 	void Awake() {
 		instance = this;
 		rigidBody = GetComponent<Rigidbody>();
+		startingPosition = this.transform.position;
+
 	}
 
 	public void StartGame()
 	{
-		rigidBody = GetComponent<Rigidbody>();
+		//rigidBody = GetComponent<Rigidbody>();
+		this.transform.position = startingPosition;
 	}
 
 	void Update () {

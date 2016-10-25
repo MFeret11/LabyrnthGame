@@ -11,11 +11,12 @@ public class ViewInGame : MonoBehaviour {
 
 	void Update() {
 		if (GameManager.instance.currentGameState == GameState.inGame) {
-			//scoreLabel.text = PlayerController.instance.GetDistance().ToString("f0");
+			scoreLabel.text = PlayerController.instance.GetDistance().ToString("f0");
 			coinLabel.text = GameManager.instance.highScore.ToString();
 			highscoreLabel.text = PlayerPrefs.GetFloat("highscore", 0).ToString("f0");
 		}
 	}
 }
+
 
 
