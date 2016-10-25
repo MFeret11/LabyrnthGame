@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour {
 	public Canvas inGameCanvas;
 	public Canvas gameOverCanvas;
 
-	public int highScore = 0;
+	public int highScore = 1;
 
 	void Awake() {
 		instance = this;
@@ -81,7 +81,6 @@ public class GameManager : MonoBehaviour {
 			GameOver();
 			Time.timeScale = 0.2f;
 		}
-			
 		Debug.Log (highScore);
 	}
 
