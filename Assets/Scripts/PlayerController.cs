@@ -8,8 +8,6 @@ public class PlayerController : MonoBehaviour
 	public float speed;
 	private Vector3 startingPosition;
 
-	//private Rigidbody rb;
-
 	private Rigidbody rigidBody;
 
 	void Awake() {
@@ -52,16 +50,10 @@ public class PlayerController : MonoBehaviour
 	public void Kill() {
 		GameManager.instance.GameOver();
 		//check if highscore save if it is
-		if (PlayerPrefs.GetFloat("highscore", 0) < Time.time) {
+		if (PlayerPrefs.GetFloat("highscore", 0) < (100-Time.time)) {
 			//save new highscore
-			PlayerPrefs.SetFloat("highscore", Time.time);
+			PlayerPrefs.SetFloat("highscore", (100-Time.time));
 		}
 	}
-
-
-	public float GetDistance() {
-		float traveledDistance = Vector2.Distance(new Vector2(startingPosition.x, 0),
-			new Vector2(this.transform.position.x, 0));
-		return traveledDistance;	                                                                               
-	}
+		
 }
