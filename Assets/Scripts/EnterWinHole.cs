@@ -4,15 +4,11 @@ using System.Collections;
 public class EnterWinHole : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
-		
 		Debug.Log ("Player encounters win hole");
-		GameManager.instance.HighScore();
-
+		GameManager.instance.LevelCount();
+		//updates speed and time.
+		PlayerController.instance.speed +=2.2f;
 		this.GetComponentInParent<MeshCollider> ().convex = true;
 		this.GetComponentInParent<MeshCollider> ().isTrigger = true;
-		//yield return new WaitForSeconds(1);
-		//this.GetComponentInParent<MeshCollider> ().isTrigger = false;
-
 	}
-
 }

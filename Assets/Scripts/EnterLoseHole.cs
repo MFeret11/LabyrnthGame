@@ -7,11 +7,13 @@ public class EnterLoseHole : MonoBehaviour {
 		Debug.Log ("Player encounters lose hole");
 		//pauses game
 		Time.timeScale = 0.0f;
-		GameManager.instance.GameOver ();
+
 		//Display UI
+		GameManager.instance.GameOver ();
 
 		//PlayerController.Player.dead
 		//Destroy(other.gameObject);
 		//GameManager.RestartLevelOne
+
 	}
 }
