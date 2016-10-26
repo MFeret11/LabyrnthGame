@@ -9,9 +9,11 @@ public class EnterLoseHole : MonoBehaviour {
 		Time.timeScale = 0.0f;
 
 		//Display UI
+		GameManager.instance.GameOver ();
 
 		//PlayerController.Player.dead
 		//Destroy(other.gameObject);
 		//GameManager.RestartLevelOne
+
 	}
 }
