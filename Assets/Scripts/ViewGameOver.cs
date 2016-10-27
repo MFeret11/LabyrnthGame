@@ -19,9 +19,7 @@ public class ViewGameOver : MonoBehaviour
 			timer = ((100f + holder) - Time.time); 
 			scoreLabel.text = timer.ToString ("f00");
 			levelCountLabel.text = GameManager.instance.levelCount.ToString ();
-			//levelCountLabel.text = GameManager.instance.highScore.ToString();
-			if (timer > PlayerPrefs.GetFloat ("highscore", 1))
-				highscoreLabel.text = GameManager.instance.highScore.ToString ();
+			highscoreLabel.text = GameManager.instance.highScore.ToString ();
 		}
 		if (GameManager.instance.currentGameState == GameState.gameOver || GameManager.instance.currentGameState == GameState.menu)
 		{

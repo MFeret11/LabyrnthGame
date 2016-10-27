@@ -45,7 +45,6 @@ public class GameManager : MonoBehaviour {
 		//timer = (100f - Time.time);
 
 		highScore = PlayerPrefs.GetInt ("highscore", highScore);
-		Debug.Log ("start: " + highScore);
 
 		//De-Activates all floor triggers
 		GameObject[] floors = GameObject.FindGameObjectsWithTag("Floor");
@@ -73,18 +72,21 @@ public class GameManager : MonoBehaviour {
 			menuCanvas.enabled = true;
 			inGameCanvas.enabled = false;
 			gameOverCanvas.enabled = false;
+			newHighScoreCanvas.enabled = false;
+
 		} else if (newGameState == GameState.inGame) {
 			//setup Unity scene for inGame state
 			menuCanvas.enabled = false;
 			inGameCanvas.enabled = true;
 			gameOverCanvas.enabled = false;
 			newHighScoreCanvas.enabled = false;
+
 		} else if (newGameState == GameState.gameOver) {
 			//setup Unity scene for gameOver state
 			menuCanvas.enabled = false;
 			inGameCanvas.enabled = false;
 			gameOverCanvas.enabled = true;
-			 if(instance.highScore == instance.levelCount)
+			if(instance.levelCount >= instance.highScore && instance.levelCount != 1)
 				newHighScoreCanvas.enabled = true;
 		}
 		currentGameState = newGameState;
