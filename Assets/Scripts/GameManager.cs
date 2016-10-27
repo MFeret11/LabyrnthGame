@@ -99,8 +99,6 @@ public class GameManager : MonoBehaviour {
 	}
 	public void LevelCount(){
 		levelCount++;
-		//int i = leve
-		//int j;
 		if(highScore <= levelCount)
 			HighScore ();
 		if (levelCount >= 6) {

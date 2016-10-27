@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager.cs">
+    <Files>
+      <File FileName="Assets/Scripts/GameManager.cs" Line="95" Column="3" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="57" Column="3" />
+      <File FileName="Assets/Scripts/EnterWinHole.cs" Line="8" Column="14" />
+      <File FileName="Assets/Scripts/ViewInGame.cs" Line="19" Column="70" />
+      <File FileName="Assets/Scripts/ViewGameOver.cs" Line="23" Column="70" />
+      <File FileName="Assets/Scripts/EnterLoseHole.cs" Line="14" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
