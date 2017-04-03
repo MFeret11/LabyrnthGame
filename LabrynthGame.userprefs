@@ -1,8 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EnterWinHole.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../SlimeGame/Assets/Scripts/Player1Controller.cs">
     <Files>
-      <File FileName="Assets/Scripts/EnterWinHole.cs" Line="14" Column="1" />
+      <File FileName="../SlimeGame/Assets/Scripts/Player1Controller.cs" Line="11" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
